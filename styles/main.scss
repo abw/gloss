@@ -99,7 +99,7 @@ body {
     font-size: 0.8rem;
   }
 }
-code.code {
+p code, code.code {
   background-color: hsl($brand-hue, 30%, 95%);
   border: 1px solid hsl($brand-hue, 40%, 90%);
   color: hsl($brand-hue, 90%, 30%);
@@ -158,4 +158,28 @@ button + button {
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
   bordeR: 0;
+}
+.frusset-pouch {
+  border: 2px solid rebeccapurple;
+  padding: 1rem;
+}
+.wide {
+  width: 100%;
+}
+table.expansions {
+  thead tr th {
+    text-align: left;
+    padding: 0.5rem 1rem;
+    background-color: rgba($black, 0.1);
+  }
+  tbody tr {
+    td {
+      &:first-child {
+        padding-right: 0.25rem;
+      }
+      pre {
+        margin: 0 0 0.25rem 0 !important;
+      }
+    }
+  }
 }

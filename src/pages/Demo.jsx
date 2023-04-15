@@ -1,23 +1,20 @@
 import React   from 'react'
-import { presetMargin, presetPadding, presetRadius, reactGlosser } from '../../lib/index.js'
+import { presetAll, presetMargin, presetPadding, presetRadius, reactGlosser } from '../../lib/index.js'
 import presetColor from '../../lib/preset/color.js'
 import presetBorder from '../../lib/preset/border.js'
 
-const { gloss } = reactGlosser(
-  presetMargin(),
-  presetPadding(),
-  presetRadius(),
-  presetColor(),
-  presetBorder(),
+const { rules, gloss } = reactGlosser(
+  presetAll(),
+  [/wibble/, () => ({ class: 'frusset-pouch' })],
   {
-    button: {
-      apply: 'radius-1 pad-v-2 pad-h-4 border-none',
-    },
-    'button-red':  'button bgcol-red-600 color-white',
-    'button-blue': 'button bgcolor-blue-600 fgcol-white',
+    button:         'radius-1 pad-2-4 border-none',
+    'button-red':   'button bgcol-red-600 color-white',
+    'button-blue':  'button bgcolor-blue-600 fgcol-white',
     'button-green': 'button bg-green-600 color-white',
-  }
+  },
 )
+console.log('rules: ', rules);
+
 
 const Demo = () =>
   <div>
@@ -34,6 +31,9 @@ const Demo = () =>
     <button {...gloss`pad-v-2 pad-h-4 rad-2 bg-rose-800 col-white border-5 bdcol-red-200`}>Grey Button</button>
     <div {...gloss`bd-solid-1-1-1-8 bd-red-200 bg-red-50 pad-2-4`}>
       Hello
+    </div>
+    <div {...gloss`wibble`}>
+      You have pleasantly wibbled my frusset pouch.
     </div>
   </div>
 

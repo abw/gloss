@@ -25,12 +25,22 @@ it(
   () => {
     expect(
       mergeRules(
-        [ 10, 20 ],
-        [ 30, 40 ]
+        [
+          [ /wibble/, { class: 'frusset-pouch' } ],
+          [ /wobble/, { class: 'bobble' } ],
+          { foo: 'bar' }
+        ],
+        [
+          [ /wiz/, { class: 'bang' } ],
+          { wam: 'bam' }
+        ],
       )
     ).toStrictEqual([
-      [ 10, 20 ],
-      [ 30, 40 ],
+      [ /wibble/, { class: 'frusset-pouch' } ],
+      [ /wobble/, { class: 'bobble' } ],
+      { foo: 'bar' },
+      [ /wiz/, { class: 'bang' } ],
+      { wam: 'bam' }
     ])
   }
 )

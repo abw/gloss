@@ -23,6 +23,7 @@ testStyle('m-l-2', { 'margin-left': '0.5rem' })
 testStyle('marl2', { 'margin-left': '0.5rem' })
 testStyle('mar-l2', { 'margin-left': '0.5rem' })
 testStyle('mar-l-2', { 'margin-left': '0.5rem' })
+testStyle('ml2', { 'margin-left': '0.5rem' })
 
 // right
 testStyle('mr', { 'margin-right': '0.25rem' })

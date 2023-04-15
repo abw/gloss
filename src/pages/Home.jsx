@@ -12,14 +12,16 @@ const Home = () =>
       />
     </a>
     <div className="pic-side">
-      <img src={imgUrl('badger.svg')}/>
+      <img src={imgUrl('gloss.svg')}/>
       <div className="blurb">
         <p className="intro">
-          <code className="code">react-gloss</code> is a React library...
+          <code className="code">react-gloss</code> is a simple React library
+          for adding rule-based styling to components.
         </p>
-        <p>
-          This site was scaffolded by{' '}
-          <a href="https://github.com/abw/scaffold-js">scaffold-js</a>.
+        <p className="subintro">
+          It can be used to automatically generate utility classes in the style
+          of Tailwind et al.  It is small, fast and flexible and only generates
+          the styles for classes that you use.
         </p>
       </div>
     </div>

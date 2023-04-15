@@ -24,4 +24,6 @@ testStyle('r-tl-2', { 'border-radius-top-left': '0.5rem' })
 testStyle('rtr2', { 'border-radius-top-right': '0.5rem' })
 testStyle('r-tr-2', { 'border-radius-top-right': '0.5rem' })
 testStyle('rad-tr-2', { 'border-radius-top-right': '0.5rem' })
+testStyle('rad-2-4', { 'border-radius': '0.5rem 1rem' })
+testStyle('rad-2-4-6-8', { 'border-radius': '0.5rem 1rem 1.5rem 2rem' })
 
