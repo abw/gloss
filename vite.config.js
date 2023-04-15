@@ -17,7 +17,7 @@ export default defineConfig({
     minify: true,
     sourcemap: false,
     lib: {
-      entry: 'lib/index.jsx',
+      entry: 'lib/index.js',
       name: '@abw/react-gloss',
       fileName: 'react-gloss',
     },
