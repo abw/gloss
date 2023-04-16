@@ -1,17 +1,17 @@
 {
-  "name": "@abw/react-gloss",
+  "name": "@abw/gloss",
   "version": "0.0.1",
-  "description": "A description for react-gloss",
+  "description": "Proof of concept for generating CSS styles on demand",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/react-gloss.umd.cjs",
-  "module": "./dist/react-gloss.js",
+  "main": "./dist/gloss.umd.cjs",
+  "module": "./dist/gloss.js",
   "exports": {
     ".": {
-      "import": "./dist/react-gloss.js",
-      "require": "./dist/react-gloss.umd.cjs"
+      "import": "./dist/gloss.js",
+      "require": "./dist/gloss.umd.cjs"
     }
   },
   "author": "Andy Wardley",
@@ -29,14 +29,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/abw/react-gloss.git"
+    "url": "git+https://github.com/abw/gloss.git"
   },
   "bugs": {
-    "url": "https://github.com/abw/react-gloss/issues"
+    "url": "https://github.com/abw/gloss/issues"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@abw/badger-timestamp": "^1.0.4",
@@ -48,6 +46,8 @@
     "eslint": "^8.37.0",
     "eslint-plugin-react": "^7.32.2",
     "jsdom": "^21.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-router-dom": "^6.10.0",
     "react-syntax-highlighter": "^15.5.0",
     "sass": "^1.60.0",

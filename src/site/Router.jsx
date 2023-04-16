@@ -1,10 +1,12 @@
 import React from 'react'
 import Layout from './Layout.jsx'
 import Home from '../pages/Home.jsx'
-import { createBrowserRouter } from 'react-router-dom'
 import GettingStarted from '../pages/GettingStarted.jsx'
-import Demo from '../pages/Demo.jsx'
+import Presets from '../pages/presets/index.jsx'
 import Examples from '../pages/examples/index.jsx'
+import { createBrowserRouter } from 'react-router-dom'
+import Discussion from '../pages/Discussion.jsx'
+import Rules from '../pages/Rules.jsx'
 
 export const Router = createBrowserRouter(
   [
@@ -14,7 +16,9 @@ export const Router = createBrowserRouter(
       children: [
         { path: '/',               element: <Home/> },
         { path: 'getting-started', element: <GettingStarted/> },
-        { path: 'demo',            element: <Demo/> },
+        { path: 'rules',           element: <Rules/> },
+        { path: 'discussion',      element: <Discussion/> },
+        { path: 'presets/*',       element: <Presets/> },
         { path: 'examples/*',      element: <Examples/> }
       ]
     },

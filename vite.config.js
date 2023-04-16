@@ -18,8 +18,8 @@ export default defineConfig({
     sourcemap: false,
     lib: {
       entry: 'lib/index.js',
-      name: '@abw/react-gloss',
-      fileName: 'react-gloss',
+      name: '@abw/gloss',
+      fileName: 'gloss',
     },
     rollupOptions: {
       external: [
