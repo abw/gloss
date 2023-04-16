@@ -1,37 +1,46 @@
-# react-gloss
+# gloss
 
-This is the README for react-gloss.  It was created using
-[badger-scaffold-js](https://github.com/abw/badger-scaffold-js).
+Gloss is a simple Javascript library for adding rule-based styling to web
+components.
+
+It can be used to automatically generate utility classes in the style of
+Tailwind et al. It is small, fast and flexible and only generates the styles
+for classes that you use. It was inspired by [UnoCSS](https://unocss.dev/).
+
+## Warning!
+
+This is a proof of concept and a work in progress. It should be considered
+unstable, unreliable and likely to change at any time. Use it at your own
+risk!
 
 ## Getting Started
 
-Add the `@abw/react-gloss` module to your project using your favourite
+Add the `@abw/gloss` module to your project using your favourite
 package manager.
 
 ```bash
 ## using npm
-$ npm add @abw/react-gloss
+$ npm add @abw/gloss
 
 ## using yarn
-$ yarn add @abw/react-gloss
+$ yarn add @abw/gloss
 
 ## using pnpm
-$ pnpm add @abw/react-gloss
+$ pnpm add @abw/gloss
 ```
 
-You can then import the modules and start using them.
+## Documentation
 
-```jsx
-import { Hello } from '@abw/react-gloss'
-```
+Visit the [documentation](https://abw.github.io/gloss/) web site
+for documentation and examples.
 
 ## Notes for Maintainers
 
 Check out the repository.
 
 ```bash
-$ git clone https://github.com/abw/react-gloss.git
-$ cd react-gloss
+$ git clone https://github.com/abw/gloss.git
+$ cd gloss
 ```
 
 Install the dependencies.
