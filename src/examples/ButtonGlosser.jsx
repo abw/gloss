@@ -7,7 +7,7 @@ const { gloss } = reactGlosser(
   presetAll(),
   [
     /^outline-(\w+)-(\w+)$/,
-    ([_, width, color]) => ({
+    ([, width, color]) => ({
       style: { outline: `${width} solid ${color}` }
     })
   ],

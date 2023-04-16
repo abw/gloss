@@ -22,7 +22,8 @@ const Home = () =>
         <p className="subintro">
           It can be used to automatically generate utility classes in the style
           of Tailwind et al.  It is small, fast and flexible and only generates
-          the styles for classes that you use.
+          the styles for classes that you use.  It was inspired by{' '}
+          <a href="https://unocss.dev">UnoCSS</a>.
         </p>
       </div>
     </div>

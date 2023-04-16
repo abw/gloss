@@ -26,11 +26,6 @@ const Sidebar = () =>
         <li><Link to="/presets/shadow"  text="Shadow"/></li>
         <li><Link to="/presets/size"    text="Size"/></li>
       </ul>
-
-      <h4>Examples</h4>
-      <ul className="menu">
-        <li><Link to="/examples/buttons" text="Buttons"/></li>
-      </ul>
     </div>
     <footer>
       <div>

@@ -76,7 +76,9 @@ const Rules = () =>
       The first <code>div</code> has the <code>example</code> rule applied
       which sets the border, padding and margin.  Although you can&apos;t see
       it here, it&apos;s also had the <code>my-example-class</code> CSS class
-      added which you can then target via CSS rules in the usual way.
+      added which you can then target via CSS rules in the usual way.  I&apos;ve
+      defined a CSS rule that sets the background color to <code>#eee</code> for{' '}
+      <code>.my-example-class</code> elements.
     </p>
     <p>
       The second <code>div</code> uses the <code>example2</code> rule which
@@ -86,7 +88,11 @@ const Rules = () =>
 
     <h2>Regular Expression Rules</h2>
     <p>
-      A more flexible approach is to use regular expressions to match rules.
+      A more flexible approach is to use regular expressions to match rules
+      This was inspired by <a href="https://unocss.dev/guide/">UnoCSS</a>{' '}
+      which uses the same approach.
+    </p>
+    <p>
       Here the rule should be specified as an array.  The first element is
       a regular expression.  The second is a function which will be passed the
       result of matching a rule, including any captured parts (inside
